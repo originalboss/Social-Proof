@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+
+main{
+   display: flex;
+   flex-direction: column;
+   width: 325px;
+   height: 100vh;
+   justify-content: space-between;
+}
+
+h1, p{
+    color: hsl(300, 43%, 22%);
+}
+p{
+    width: 285px;
+    line-height: 20px;
+    
+}
+li.vb{
+    color: hsl(333, 80%, 67%);
+}
+
+img.people{
+    border-radius: 40px;
+    scale: .55;
+    display: inline;
+    position:absolute;
+    margin-right: 200px;
+    margin-top: -110px;
+}
+
+article{
+    width:250px;
+    font-size: 15px;
+}
+
+.card1, .card2, .card3{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+    height: 200px;
+    width: 300px;
+    font-weight: 500;
+    border-radius: 10px;
+    line-height: 18px;
+    
+}
+
+ul{
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+    position: relative;
+    margin-right: 50px;
+    font-weight: 700;
+    
+}
+
+.stars1, .stars2, .stars3{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    height: 60px;
+    margin: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+section img{
+
+    margin-top: 10px;
+    
+}
+
+@media screen and (min-width:768px) {
+
+
+    main{
+        width: 762px;
+        display: grid;
+        grid-template-columns: repeat(6, 127px);
+        grid-template-rows: repeat(2, 300px);
+    }
+   h1, p{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+   }
+   div.text{
+    display: flex;
+    flex-flow: column;
+   }
+   
+   section.cards{
+    display: grid;
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+   }
+   
+   div.box{
+    display: flex;
+    justify-content: space-around;
+   }
+
+   .card1, .card2, .card3{
+    margin: 5px;
+   }
+
+   section.stars{
+    display: grid;
+    grid-column: 4 / 6;
+   }
+
+   section.stars div{
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+   }
+
+   section.stars img{
+    position: relative;
+    margin-left: 10px;
+   }
+   div.stars1{
+    position: relative;
+    width: 400px;
+    margin-left: 70px;
+   }
+   div.stars2{
+    position: relative;
+    margin-left: 100px;
+    margin-right: 50px;
+   
+   }
+
+   div.stars3{
+    position: relative;
+    margin-left: 150px;
+   }
+  .card2{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .card3{
+    position: relative;
+    margin-top:30px;
+    margin-left: 15px;
+
+}
+}
